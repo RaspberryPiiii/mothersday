@@ -1,36 +1,54 @@
 body {
-  background: linear-gradient(135deg, #ffe0ec, #ffb6c1);
+  background: linear-gradient(135deg, #8a2be2, #ff69b4);
   font-family: 'Segoe UI', sans-serif;
-  text-align: center;
-  padding: 30px;
   margin: 0;
-  color: #333;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+  overflow-x: hidden;
 }
 
-.container {
-  background: white;
-  padding: 30px;
-  border-radius: 16px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  max-width: 700px;
-  margin: auto;
+.card {
+  max-width: 800px;
+  margin: 60px auto;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+  animation: fadeIn 2s ease-out;
 }
 
-h1 {
-  font-size: 2.5em;
-  color: #e91e63;
+.title {
+  font-size: 3em;
+  color: #fff;
+  text-shadow: 0 0 10px #ffccff, 0 0 20px #ff69b4;
+  margin-bottom: 20px;
 }
 
-audio {
-  margin-top: 20px;
+.message {
+  font-size: 1.25em;
+  line-height: 1.7;
+  margin-bottom: 30px;
 }
 
-.lyrics {
-  text-align: left;
-  white-space: pre-wrap;
-  background: #fff0f5;
-  padding: 20px;
-  border-radius: 10px;
-  margin-top: 20px;
-  font-size: 1em;
+.signature {
+  font-size: 1.2em;
+  font-style: italic;
+  margin-bottom: 30px;
+}
+
+.emoji {
+  font-size: 3em;
+  margin-bottom: 30px;
+}
+
+.xoxo {
+  font-size: 1.2em;
+  white-space: pre-line;
+  color: #fff5f9;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
 }
